@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.registration-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+.registration-container h1 {
+    text-align: center;
+    color: #172b4d;
+    margin-bottom: 25px;
+}
+.registration-container form p {
+    margin-bottom: 18px;
+}
+.registration-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.registration-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.registration-container input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+.registration-container button {
+    width: 100%;
+    padding: 13px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+.registration-container button:hover {
+    background-color: #1d4ed8;
+}
+.registration-container > p {
+    text-align: center;
+    margin-top: 20px;
+}
+.registration-container a {
+    color: #2563eb;
+    text-decoration: none;
+}
+.registration-container a:hover {
+    text-decoration: underline;
+}

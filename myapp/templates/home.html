@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>My Website</h2>
+
+        <div class="nav-links">
+            <a href="{% url 'home' %}">Home</a>
+
+            <form method="POST" action="{% url 'logout' %}">
+                {% csrf_token %}
+                <button type="submit">Logout</button>
+            </form>
+        </div>
+    </nav>
+
+    <main class="home-container">
+        <h1>Welcome, {{ request.user.username }}!</h1>
+
+        <p>You have successfully logged in.</p>
+    </main>
+
+</body>
+</html>
